@@ -22,7 +22,7 @@ const Signupform = ({ submitform }) => {
     event.preventDefault();
     setErrors(Validations(values));
     setdataIsCorrect(true);
-    axios.post("https://samplesignup-67048-default-rtdb.firebaseio.com/Signup_info.json",values).then(() => alert("Submitted Succesfully"));
+    axios.post("https://samplesignup-67048-default-rtdb.firebaseio.com/Signup_info.json",values);
   };
 
   useEffect(() => {
